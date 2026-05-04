@@ -1,7 +1,7 @@
 == Bombay Pirate Retro ==
 
 Contributors: Aditya Kane,
-Requires at least: 7.0-RC2-62242
+Requires at least: 6.9.4
 Tested up to: 7.0-RC2-62242
 Requires PHP: 5.7
 License: GPLv2 or later
