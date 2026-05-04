@@ -1,0 +1,335 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.0/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"gradients": [
+				{
+					"gradient": "linear-gradient(180deg, #F5F0E8 0%, #FAF7F2 100%)",
+					"name": "Parchment to Cream",
+					"slug": "parchment-to-cream"
+				},
+				{
+					"gradient": "linear-gradient(135deg, #C0622F 0%, #D4915A 100%)",
+					"name": "Saffron Fade",
+					"slug": "saffron-fade"
+				}
+			],
+			"palette": [
+				{
+					"color": "#F5F0E8",
+					"name": "Parchment",
+					"slug": "parchment"
+				},
+				{
+					"color": "#1C1C1C",
+					"name": "Ink",
+					"slug": "ink"
+				},
+				{
+					"color": "#C0622F",
+					"name": "Saffron",
+					"slug": "saffron"
+				},
+				{
+					"color": "#7A9E7E",
+					"name": "Sage",
+					"slug": "sage"
+				},
+				{
+					"color": "#A89F91",
+					"name": "Warm Gray",
+					"slug": "warm-gray"
+				},
+				{
+					"color": "#FAF7F2",
+					"name": "Cream",
+					"slug": "cream"
+				},
+				{
+					"color": "#2C4A4E",
+					"name": "Deep Teal",
+					"slug": "deep-teal"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "860px",
+			"wideSize": "1280px"
+		},
+		"spacing": {
+			"spacingSizes": [
+				{
+					"name": "1",
+					"size": "0.5rem",
+					"slug": "10"
+				},
+				{
+					"name": "2",
+					"size": "1rem",
+					"slug": "20"
+				},
+				{
+					"name": "3",
+					"size": "1.5rem",
+					"slug": "30"
+				},
+				{
+					"name": "4",
+					"size": "2rem",
+					"slug": "40"
+				},
+				{
+					"name": "5",
+					"size": "3rem",
+					"slug": "50"
+				},
+				{
+					"name": "6",
+					"size": "4rem",
+					"slug": "60"
+				},
+				{
+					"name": "7",
+					"size": "5rem",
+					"slug": "70"
+				},
+				{
+					"name": "8",
+					"size": "7rem",
+					"slug": "80"
+				}
+			],
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw",
+				"%"
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+					"name": "Playfair Display",
+					"slug": "playfair"
+				},
+				{
+					"fontFamily": "'Space Mono', 'Courier New', monospace",
+					"name": "Space Mono",
+					"slug": "space-mono"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "Small",
+					"size": "0.875rem",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "1rem",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "1.25rem",
+					"slug": "large"
+				},
+				{
+					"name": "Extra Large",
+					"size": "1.75rem",
+					"slug": "x-large"
+				},
+				{
+					"name": "Double Extra Large",
+					"size": "2.25rem",
+					"slug": "xx-large"
+				},
+				{
+					"name": "Display",
+					"size": "clamp(2.5rem, 5vw, 3.5rem)",
+					"slug": "display"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/code": {
+				"border": {
+					"color": "#1C1C1C",
+					"style": "solid",
+					"width": "2px"
+				},
+				"color": {
+					"background": "#FAF7F2",
+					"text": "#1C1C1C"
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontFamily": "'Space Mono', 'Courier New', monospace",
+					"fontSize": "0.85rem",
+					"fontWeight": "700",
+					"letterSpacing": "1px",
+					"textTransform": "uppercase"
+				}
+			},
+			"core/post-title": {
+				"elements": {
+					"link": {
+						":hover": {
+							"color": {
+								"text": "#C0622F"
+							}
+						},
+						"color": {
+							"text": "#1C1C1C"
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
+			},
+			"core/quote": {
+				"border": {
+					"left": {
+						"color": "#C0622F",
+						"style": "solid",
+						"width": "4px"
+					}
+				},
+				"typography": {
+					"fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+					"fontStyle": "italic"
+				}
+			},
+			"core/separator": {
+				"border": {
+					"width": "3px"
+				},
+				"color": {
+					"text": "#1C1C1C"
+				}
+			},
+			"core/site-title": {
+				"elements": {
+					"link": {
+						":hover": {
+							"color": {
+								"text": "#C0622F"
+							}
+						},
+						"color": {
+							"text": "#1C1C1C"
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				},
+				"typography": {
+					"fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+					"fontSize": "1.5rem",
+					"fontWeight": "900",
+					"letterSpacing": "-0.5px"
+				}
+			}
+		},
+		"color": {
+			"background": "#F5F0E8",
+			"text": "#1C1C1C"
+		},
+		"elements": {
+			"button": {
+				":hover": {
+					"color": {
+						"background": "#C0622F",
+						"text": "#F5F0E8"
+					}
+				},
+				"border": {
+					"radius": "0px"
+				},
+				"color": {
+					"background": "#1C1C1C",
+					"text": "#F5F0E8"
+				},
+				"typography": {
+					"fontFamily": "'Space Mono', 'Courier New', monospace",
+					"fontSize": "0.875rem",
+					"fontWeight": "700",
+					"letterSpacing": "1px",
+					"textTransform": "uppercase"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "clamp(2.5rem, 5vw, 3.5rem)",
+					"letterSpacing": "-1px"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "2.25rem",
+					"letterSpacing": "-0.5px"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "1.75rem"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "1.25rem"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "#1C1C1C"
+				},
+				"typography": {
+					"fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+					"fontWeight": "900",
+					"lineHeight": "1.15"
+				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "#7A9E7E"
+					}
+				},
+				"color": {
+					"text": "#C0622F"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "1.5rem"
+		},
+		"typography": {
+			"fontFamily": "'Space Mono', 'Courier New', monospace",
+			"fontSize": "1rem",
+			"lineHeight": "1.65"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
+}

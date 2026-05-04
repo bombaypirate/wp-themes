@@ -1,0 +1,1848 @@
+<?xml version="1.0"?><artefact xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="artefact.xsd" name="Bombay Pirate Retro Revival" slug="telex-bombay-pirate-retro" type="code-package" schemaVersion="2">
+  <file path="theme.json">
+    <description>Central theme configuration — Bombay Broadsheet editorial aesthetic with warm parchment, ink, saffron, and sage.</description>
+    <content><![CDATA[
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "860px",
+			"wideSize": "1280px"
+		},
+		"color": {
+			"palette": [
+				{
+					"slug": "parchment",
+					"color": "#F5F0E8",
+					"name": "Parchment"
+				},
+				{
+					"slug": "ink",
+					"color": "#1C1C1C",
+					"name": "Ink"
+				},
+				{
+					"slug": "saffron",
+					"color": "#C0622F",
+					"name": "Saffron"
+				},
+				{
+					"slug": "sage",
+					"color": "#7A9E7E",
+					"name": "Sage"
+				},
+				{
+					"slug": "warm-gray",
+					"color": "#A89F91",
+					"name": "Warm Gray"
+				},
+				{
+					"slug": "cream",
+					"color": "#FAF7F2",
+					"name": "Cream"
+				},
+				{
+					"slug": "deep-teal",
+					"color": "#2C4A4E",
+					"name": "Deep Teal"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "parchment-to-cream",
+					"gradient": "linear-gradient(180deg, #F5F0E8 0%, #FAF7F2 100%)",
+					"name": "Parchment to Cream"
+				},
+				{
+					"slug": "saffron-fade",
+					"gradient": "linear-gradient(135deg, #C0622F 0%, #D4915A 100%)",
+					"name": "Saffron Fade"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+					"slug": "playfair",
+					"name": "Playfair Display"
+				},
+				{
+					"fontFamily": "'Space Mono', 'Courier New', monospace",
+					"slug": "space-mono",
+					"name": "Space Mono"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "small",
+					"size": "0.875rem",
+					"name": "Small"
+				},
+				{
+					"slug": "medium",
+					"size": "1rem",
+					"name": "Medium"
+				},
+				{
+					"slug": "large",
+					"size": "1.25rem",
+					"name": "Large"
+				},
+				{
+					"slug": "x-large",
+					"size": "1.75rem",
+					"name": "Extra Large"
+				},
+				{
+					"slug": "xx-large",
+					"size": "2.25rem",
+					"name": "Double Extra Large"
+				},
+				{
+					"slug": "display",
+					"size": "clamp(2.5rem, 5vw, 3.5rem)",
+					"name": "Display"
+				}
+			]
+		},
+		"spacing": {
+			"units": ["px", "em", "rem", "vh", "vw", "%"],
+			"spacingSizes": [
+				{ "slug": "10", "size": "0.5rem", "name": "1" },
+				{ "slug": "20", "size": "1rem", "name": "2" },
+				{ "slug": "30", "size": "1.5rem", "name": "3" },
+				{ "slug": "40", "size": "2rem", "name": "4" },
+				{ "slug": "50", "size": "3rem", "name": "5" },
+				{ "slug": "60", "size": "4rem", "name": "6" },
+				{ "slug": "70", "size": "5rem", "name": "7" },
+				{ "slug": "80", "size": "7rem", "name": "8" }
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#F5F0E8",
+			"text": "#1C1C1C"
+		},
+		"typography": {
+			"fontFamily": "'Space Mono', 'Courier New', monospace",
+			"fontSize": "1rem",
+			"lineHeight": "1.65"
+		},
+		"spacing": {
+			"blockGap": "1.5rem"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+					"fontWeight": "900",
+					"lineHeight": "1.15"
+				},
+				"color": {
+					"text": "#1C1C1C"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "clamp(2.5rem, 5vw, 3.5rem)",
+					"letterSpacing": "-1px"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "2.25rem",
+					"letterSpacing": "-0.5px"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "1.75rem"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "1.25rem"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "#C0622F"
+				},
+				":hover": {
+					"color": {
+						"text": "#7A9E7E"
+					}
+				}
+			},
+			"button": {
+				"color": {
+					"background": "#1C1C1C",
+					"text": "#F5F0E8"
+				},
+				"typography": {
+					"fontFamily": "'Space Mono', 'Courier New', monospace",
+					"fontSize": "0.875rem",
+					"fontWeight": "700",
+					"letterSpacing": "1px",
+					"textTransform": "uppercase"
+				},
+				"border": {
+					"radius": "0px"
+				},
+				":hover": {
+					"color": {
+						"background": "#C0622F",
+						"text": "#F5F0E8"
+					}
+				}
+			}
+		},
+		"blocks": {
+			"core/navigation": {
+				"typography": {
+					"fontFamily": "'Space Mono', 'Courier New', monospace",
+					"fontSize": "0.85rem",
+					"fontWeight": "700",
+					"textTransform": "uppercase",
+					"letterSpacing": "1px"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+					"fontSize": "1.5rem",
+					"fontWeight": "900",
+					"letterSpacing": "-0.5px"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "#1C1C1C"
+						},
+						":hover": {
+							"color": {
+								"text": "#C0622F"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
+			},
+			"core/post-title": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "#1C1C1C"
+						},
+						":hover": {
+							"color": {
+								"text": "#C0622F"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				}
+			},
+			"core/quote": {
+				"border": {
+					"left": {
+						"color": "#C0622F",
+						"width": "4px",
+						"style": "solid"
+					}
+				},
+				"typography": {
+					"fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif",
+					"fontStyle": "italic"
+				}
+			},
+			"core/separator": {
+				"color": {
+					"text": "#1C1C1C"
+				},
+				"border": {
+					"width": "3px"
+				}
+			},
+			"core/code": {
+				"color": {
+					"background": "#FAF7F2",
+					"text": "#1C1C1C"
+				},
+				"border": {
+					"color": "#1C1C1C",
+					"width": "2px",
+					"style": "solid"
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+	]
+}
+]]></content>
+  </file>
+  <file path="style.css">
+    <description>Main stylesheet with theme header and custom Bombay Broadsheet editorial styles.</description>
+    <content><![CDATA[
+/*
+Theme Name: Bombay Pirate Retro Revival
+Author: WordPress Telex
+Description: A retro-contemporary editorial block theme inspired by vintage Indian broadsheet newspapers, featuring warm parchment tones, saffron and sage accents, Playfair Display headlines paired with Space Mono body text, and a charming elephant trail motif. Built for the Bombay Pirate blog by Aditya Kane.
+Version: 0.1.0
+Requires at least: 6.4
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GPLv2 or later
+Text Domain: telex-bombay-pirate-retro
+Tags: block-theme, full-site-editing, blog, editorial
+
+Bombay Pirate Retro Revival — calm, quirky, joyful.
+*/
+
+/* ── Base resets ── */
+.wp-site-blocks > * + * {
+	margin-block-start: 0;
+}
+
+.wp-site-blocks > footer {
+	margin-block-start: 0;
+}
+
+/* ── Header ── */
+.broadsheet-header {
+	border-bottom: 4px solid var(--wp--preset--color--ink);
+}
+
+.broadsheet-header .wp-block-navigation a {
+	transition: color 0.3s ease;
+}
+
+.broadsheet-header .wp-block-navigation a:hover {
+	color: var(--wp--preset--color--sage) !important;
+}
+
+/* ── Ornament dividers ── */
+.ornament-rule {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.75rem 0;
+}
+
+.ornament-rule::before,
+.ornament-rule::after {
+	content: "";
+	flex: 1;
+	height: 3px;
+	background-color: var(--wp--preset--color--ink);
+}
+
+.ornament-rule .wp-block-separator {
+	display: none;
+}
+
+/* ── Star divider ── */
+.star-divider {
+	text-align: center;
+	font-size: 1.25rem;
+	letter-spacing: 1.5rem;
+	color: var(--wp--preset--color--ink);
+}
+
+/* ── Hero image frame ── */
+.broadsheet-frame {
+	padding: 0.75rem;
+	border: 4px solid var(--wp--preset--color--ink);
+	box-shadow: 12px 12px 0px rgba(28, 28, 28, 0.1);
+	transform: rotate(0.75deg);
+	transition: transform 0.4s ease;
+	position: relative;
+}
+
+.broadsheet-frame:hover {
+	transform: rotate(0deg);
+}
+
+.broadsheet-frame img {
+	filter: sepia(0.15) contrast(1.05);
+	border: 2px solid var(--wp--preset--color--ink);
+}
+
+/* ── Tag pill style ── */
+.broadsheet-tag {
+	display: inline-block;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	padding: 0.25rem 0.75rem;
+	border: 2px solid var(--wp--preset--color--sage);
+	color: var(--wp--preset--color--sage);
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+/* ── Section ink borders ── */
+.ink-border-top {
+	border-top: 3px solid var(--wp--preset--color--ink);
+}
+
+.ink-border-bottom {
+	border-bottom: 3px solid var(--wp--preset--color--ink);
+}
+
+.ink-border-double-top {
+	border-top: 6px double var(--wp--preset--color--ink);
+}
+
+/* ── Elephant track ── */
+.elephant-track {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 1rem 0;
+}
+
+.elephant-track::before {
+	content: "";
+	flex: 1;
+	height: 10px;
+	background-image: radial-gradient(circle, var(--wp--preset--color--saffron) 2.5px, transparent 3px);
+	background-size: 16px 16px;
+	background-repeat: repeat-x;
+	background-position: center;
+	opacity: 0.7;
+}
+
+/* ── Card styles ── */
+.equal-cards > .wp-block-column {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 0;
+}
+
+.equal-cards > .wp-block-column > .wp-block-group {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.equal-cards .cta-bottom {
+	margin-top: auto;
+	justify-content: center;
+}
+
+/* ── Post cards ── */
+.post-card {
+	border: 3px solid var(--wp--preset--color--ink);
+	padding: 1.5rem;
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+	background: var(--wp--preset--color--cream);
+}
+
+.post-card:hover {
+	box-shadow: 8px 8px 0px rgba(28, 28, 28, 0.12);
+	transform: translateY(-2px);
+}
+
+/* ── Category labels ── */
+.category-label {
+	font-family: 'Space Mono', 'Courier New', monospace;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-weight: 700;
+}
+
+/* ── Photo gallery grid ── */
+.photo-grid figure {
+	border: 3px solid var(--wp--preset--color--ink);
+	padding: 0.4rem;
+	background: var(--wp--preset--color--cream);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid figure:hover {
+	transform: rotate(-1deg);
+	box-shadow: 6px 6px 0 rgba(28, 28, 28, 0.1);
+}
+
+.photo-grid img {
+	filter: sepia(0.1) contrast(1.05);
+}
+
+/* ── Grain overlay utility ── */
+.grain-overlay {
+	position: relative;
+}
+
+.grain-overlay::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.08"/></svg>');
+	mix-blend-mode: multiply;
+	pointer-events: none;
+	z-index: 1;
+}
+
+/* ── Letterpress text effect ── */
+.letterpress {
+	text-shadow:
+		2px 2px 0px rgba(28, 28, 28, 0.12),
+		-1px -1px 0px rgba(255, 255, 255, 0.5);
+}
+
+/* ── Saffron accent underline ── */
+.saffron-underline {
+	text-decoration: underline;
+	text-decoration-color: var(--wp--preset--color--saffron);
+	text-underline-offset: 4px;
+	text-decoration-thickness: 3px;
+}
+
+/* ── Scroll animations ── */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(24px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-on-scroll {
+	animation: fadeInUp 0.6s ease-out both;
+}
+
+/* ── Footer ── */
+.broadsheet-footer {
+	border-top: 6px double var(--wp--preset--color--ink);
+}
+
+.broadsheet-footer a {
+	transition: color 0.3s ease;
+}
+
+/* ── Scroll Elephant ── */
+.scroll-elephant-container {
+	position: fixed;
+	bottom: 1.5rem;
+	left: 0;
+	width: 100%;
+	height: 56px;
+	pointer-events: none;
+	z-index: 9999;
+	overflow: hidden;
+}
+
+.scroll-elephant {
+	position: absolute;
+	bottom: 0;
+	left: -60px;
+	width: 56px;
+	height: 56px;
+	transition: none;
+	will-change: transform;
+}
+
+.scroll-elephant svg {
+	width: 56px;
+	height: 56px;
+	display: block;
+}
+
+.scroll-elephant-trail {
+	position: absolute;
+	bottom: 6px;
+	left: 0;
+	height: 10px;
+	width: 0;
+	background-image: radial-gradient(circle, var(--wp--preset--color--saffron, #C0622F) 2px, transparent 2.5px);
+	background-size: 14px 14px;
+	background-repeat: repeat-x;
+	background-position: left center;
+	opacity: 0.55;
+	transition: none;
+	will-change: width;
+}
+
+/* Bob animation for the elephant */
+@keyframes elephantBob {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-3px); }
+}
+
+.scroll-elephant--walking svg {
+	animation: elephantBob 0.4s ease-in-out infinite;
+}
+
+/* Hide on very small screens where it crowds the UI */
+@media (max-width: 480px) {
+	.scroll-elephant-container {
+		display: none;
+	}
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+	.broadsheet-frame {
+		transform: rotate(0deg);
+		box-shadow: 6px 6px 0px rgba(28, 28, 28, 0.08);
+	}
+}
+]]></content>
+  </file>
+  <file path="parts/header.html">
+    <description>Editorial broadsheet-style header with site title and page list navigation.</description>
+    <content><![CDATA[<!-- wp:group {"className":"broadsheet-header","style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}},"margin":{"top":"0"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group broadsheet-header" style="padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+<div class="wp-block-group" style="padding-top:0;padding-bottom:0"><!-- wp:site-title /-->
+
+<!-- wp:navigation {"style":{"spacing":{"blockGap":"2rem"}}} -->
+<!-- wp:page-list /-->
+<!-- /wp:navigation --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->]]></content>
+  </file>
+  <file path="parts/footer.html">
+    <description>Broadsheet-style footer with ornamental border, elephant motif, and credit line.</description>
+    <content><![CDATA[<!-- wp:group {"textColor":"parchment","className":"broadsheet-footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}},"color":{"background":"#1C1C1C"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group broadsheet-footer has-parchment-color has-text-color has-background" style="background-color:#1C1C1C;margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"4rem"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:heading {"level":3,"textColor":"parchment","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontSize":"1.75rem","fontWeight":"900"}}} -->
+<h3 class="wp-block-heading has-parchment-color has-text-color" style="font-family:'Playfair Display', Georgia, serif;font-size:1.75rem;font-weight:900">Bombay Pirate</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.875rem","lineHeight":"1.7"}}} -->
+<p class="has-warm-gray-color has-text-color" style="font-size:0.875rem;line-height:1.7">A thoughtfully hand-assembled repository by Aditya Kane. Documenting wanderings through open-source philosophy, digital archives, and the analog warmth of everyday moments.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":4,"textColor":"sage","style":{"typography":{"fontFamily":"'Space Mono', monospace","fontSize":"0.8rem","textTransform":"uppercase","letterSpacing":"2px"}}} -->
+<h4 class="wp-block-heading has-sage-color has-text-color" style="font-family:'Space Mono', monospace;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase">Dispatches</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.875rem","lineHeight":"2"}}} -->
+<p class="has-warm-gray-color has-text-color" style="font-size:0.875rem;line-height:2">Opensource<br>WordPress<br>Technology<br>Books &amp; Movies</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%"><!-- wp:heading {"level":4,"textColor":"sage","style":{"typography":{"fontFamily":"'Space Mono', monospace","fontSize":"0.8rem","textTransform":"uppercase","letterSpacing":"2px"}}} -->
+<h4 class="wp-block-heading has-sage-color has-text-color" style="font-family:'Space Mono', monospace;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase">Signal Fires</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.875rem","lineHeight":"2"}}} -->
+<p class="has-warm-gray-color has-text-color" style="font-size:0.875rem;line-height:2">RSS Feed<br>GitHub<br>Twitter / X<br>Email</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#A89F91"}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="background-color:#A89F91;color:#A89F91"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.75rem","letterSpacing":"1px"}}} -->
+<p class="has-warm-gray-color has-text-color" style="font-size:0.75rem;letter-spacing:1px">Created with <a href="https://telex.automattic.ai" target="_blank" rel="noopener noreferrer">Telex</a>, powered by <a href="https://wordpress.org" target="_blank" rel="noopener noreferrer">WordPress</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.75rem","letterSpacing":"1px"}}} -->
+<p class="has-warm-gray-color has-text-color" style="font-size:0.75rem;letter-spacing:1px">Est. 2025 -- Bombay Pirate</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->]]></content>
+  </file>
+  <file path="templates/index.html">
+    <description>Main template — thin shell with header, post content area, and footer.</description>
+    <content><![CDATA[<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="margin-top:0"><!-- wp:post-content {"layout":{"type":"constrained"}} /--></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->]]></content>
+  </file>
+  <file path="content/pages/home.html">
+    <description>Rich homepage content — editorial broadsheet layout with hero, latest dispatches, category sections, photo gallery teaser, and reading corner.</description>
+    <content><![CDATA[<!-- telex:meta
+title: Home
+-->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"4rem"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"40%"} -->
+<div class="wp-block-column" style="flex-basis:40%"><!-- wp:group {"style":{"spacing":{"blockGap":"0.75rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"broadsheet-tag"} -->
+<p class="broadsheet-tag">Logbook</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"broadsheet-tag"} -->
+<p class="broadsheet-tag">Curiosities</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:heading {"level":1,"className":"letterpress","style":{"typography":{"fontSize":"clamp(3rem, 6vw, 5.5rem)","lineHeight":"0.92","letterSpacing":"-2px","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"},"spacing":{"margin":{"top":"1.5rem","bottom":"1.5rem"}}}} -->
+<h1 class="wp-block-heading letterpress" style="margin-top:1.5rem;margin-bottom:1.5rem;font-family:'Playfair Display', Georgia, serif;font-size:clamp(3rem, 6vw, 5.5rem);font-weight:900;letter-spacing:-2px;line-height:0.92">Bombay<br>Pirate</h1>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.05rem","lineHeight":"1.75"}}} -->
+<p style="font-size:1.05rem;line-height:1.75">A thoughtfully hand-assembled repository by Aditya Kane. Documenting wanderings through open-source philosophy, digital archives, and the analog warmth of everyday moments.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"elephant-track","style":{"spacing":{"margin":{"top":"2rem"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group elephant-track" style="margin-top:2rem"></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"60%"} -->
+<div class="wp-block-column" style="flex-basis:60%"><!-- wp:group {"className":"broadsheet-frame","layout":{"type":"default"}} -->
+<div class="wp-block-group broadsheet-frame"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/design-preview-1-hero.png" alt="AI_IMAGE: A nostalgic and warm-toned slightly grainy photograph of a vintage camera resting on a wooden desk next to an open book and scattered photographs, evoking a calm and curious personal archive | photorealistic | landscape"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"ink-border-top","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}},"color":{"background":"#FAF7F2"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull ink-border-top has-background" style="background-color:#FAF7F2;margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:heading {"className":"letterpress","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h2 class="wp-block-heading letterpress" style="font-family:'Playfair Display', Georgia, serif;font-weight:900">Latest Dispatches</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"saffron","className":"category-label"} -->
+<p class="category-label has-saffron-color has-text-color">From the logbook</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:columns {"className":"equal-cards","style":{"spacing":{"blockGap":{"left":"2rem"},"margin":{"top":"2rem"}}}} -->
+<div class="wp-block-columns equal-cards" style="margin-top:2rem"><!-- wp:column {"verticalAlignment":"stretch","width":"33.33%"} -->
+<div class="wp-block-column is-vertically-aligned-stretch" style="flex-basis:33.33%"><!-- wp:group {"className":"post-card","layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group post-card"><!-- wp:paragraph {"textColor":"sage","className":"category-label","style":{"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
+<p class="category-label has-sage-color has-text-color" style="margin-bottom:0.5rem">Opensource</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.35rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900","lineHeight":"1.2"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.35rem;font-weight:900;line-height:1.2">The Quiet Revolution of Community-Driven Code</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.875rem","lineHeight":"1.65"}}} -->
+<p class="has-warm-gray-color has-text-color" style="font-size:0.875rem;line-height:1.65">On how volunteer-led projects continue to reshape the digital commons, one commit at a time. The invisible architects of the internet we take for granted.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"saffron","style":{"typography":{"fontSize":"0.75rem","letterSpacing":"1px","textTransform":"uppercase"}}} -->
+<p class="has-saffron-color has-text-color" style="font-size:0.75rem;letter-spacing:1px;text-transform:uppercase">Read more</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"stretch","width":"33.33%"} -->
+<div class="wp-block-column is-vertically-aligned-stretch" style="flex-basis:33.33%"><!-- wp:group {"className":"post-card","layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group post-card"><!-- wp:paragraph {"textColor":"sage","className":"category-label","style":{"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
+<p class="category-label has-sage-color has-text-color" style="margin-bottom:0.5rem">Technology</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.35rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900","lineHeight":"1.2"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.35rem;font-weight:900;line-height:1.2">Digital Minimalism and the Art of Focused Computing</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.875rem","lineHeight":"1.65"}}} -->
+<p class="has-warm-gray-color has-text-color" style="font-size:0.875rem;line-height:1.65">Exploring the tools, habits, and philosophies that help reclaim attention in an age of perpetual notification. Less software, more craft.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"saffron","style":{"typography":{"fontSize":"0.75rem","letterSpacing":"1px","textTransform":"uppercase"}}} -->
+<p class="has-saffron-color has-text-color" style="font-size:0.75rem;letter-spacing:1px;text-transform:uppercase">Read more</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"stretch","width":"33.33%"} -->
+<div class="wp-block-column is-vertically-aligned-stretch" style="flex-basis:33.33%"><!-- wp:group {"className":"post-card","layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group post-card"><!-- wp:paragraph {"textColor":"sage","className":"category-label","style":{"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
+<p class="category-label has-sage-color has-text-color" style="margin-bottom:0.5rem">WordPress</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.35rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900","lineHeight":"1.2"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.35rem;font-weight:900;line-height:1.2">Block Themes and the Democratization of Design</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.875rem","lineHeight":"1.65"}}} -->
+<p class="has-warm-gray-color has-text-color" style="font-size:0.875rem;line-height:1.65">How Full Site Editing is quietly making professional web design accessible to anyone with a browser and an idea. The Gutenberg promise, realized.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"saffron","style":{"typography":{"fontSize":"0.75rem","letterSpacing":"1px","textTransform":"uppercase"}}} -->
+<p class="has-saffron-color has-text-color" style="font-size:0.75rem;letter-spacing:1px;text-transform:uppercase">Read more</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"ink-border-top","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull ink-border-top" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group"><!-- wp:heading {"className":"letterpress","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h2 class="wp-block-heading letterpress" style="font-family:'Playfair Display', Georgia, serif;font-weight:900">From the Field</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"1rem","lineHeight":"1.7"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
+<p class="has-warm-gray-color has-text-color" style="margin-bottom:2rem;font-size:1rem;line-height:1.7">Photographs captured in the drift between destinations. Small moments, unhurried. The quiet textures of daily life.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"columns":3,"linkTo":"none","className":"photo-grid","style":{"spacing":{"blockGap":{"left":"1.5rem","top":"1.5rem"}}}} -->
+<figure class="wp-block-gallery has-nested-images columns-3 is-cropped photo-grid"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/photo-street-scene.png" alt="AI_IMAGE: A warm-toned slightly faded photograph of a narrow street in an Indian market town with hanging fabrics and morning light casting diagonal shadows across weathered walls, evoking calm nostalgia | photorealistic | square"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/photo-chai-stall.png" alt="AI_IMAGE: A warm grainy photograph of a roadside chai stall with steel glasses and steam rising, early morning golden light, vintage documentary photography style | photorealistic | square"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/photo-old-books.png" alt="AI_IMAGE: An overhead warm-toned photograph of weathered secondhand books stacked on a wooden table with reading glasses and a brass paperweight, soft diffused light, calm and scholarly atmosphere | photorealistic | square"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"ink-border-top","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|70","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}},"color":{"background":"#FAF7F2"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull ink-border-top has-background" style="background-color:#FAF7F2;margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"4rem"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"width":"55%"} -->
+<div class="wp-block-column" style="flex-basis:55%"><!-- wp:heading {"className":"letterpress","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h2 class="wp-block-heading letterpress" style="font-family:'Playfair Display', Georgia, serif;font-weight:900">The Reading Corner</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"top":"1rem","bottom":"1.5rem"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:1rem;margin-bottom:1.5rem;background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.5rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.5rem;font-weight:900">The Master and Margarita</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"saffron","style":{"typography":{"fontSize":"0.875rem"}}} -->
+<p class="has-saffron-color has-text-color" style="font-size:0.875rem">by Mikhail Bulgakov</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.95rem","lineHeight":"1.7"}}} -->
+<p style="font-size:0.95rem;line-height:1.7">A wild, witty, and deeply humane novel about the Devil visiting Soviet Moscow. Part satire, part love story, part meditation on the nature of art and cowardice. One of those books that rearranges the furniture in your head.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:separator {"className":"is-style-dots","style":{"spacing":{"margin":{"top":"1.5rem","bottom":"1.5rem"}}}} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" style="margin-top:1.5rem;margin-bottom:1.5rem"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.5rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.5rem;font-weight:900">Convenience Store Woman</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"saffron","style":{"typography":{"fontSize":"0.875rem"}}} -->
+<p class="has-saffron-color has-text-color" style="font-size:0.875rem">by Sayaka Murata</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.95rem","lineHeight":"1.7"}}} -->
+<p style="font-size:0.95rem;line-height:1.7">A short, sharp, oddly serene novel about a woman who finds perfect contentment working at a convenience store while society insists she should want more. Quiet rebellion disguised as compliance.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"45%"} -->
+<div class="wp-block-column" style="flex-basis:45%"><!-- wp:heading {"className":"letterpress","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h2 class="wp-block-heading letterpress" style="font-family:'Playfair Display', Georgia, serif;font-weight:900">Now Screening</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"top":"1rem","bottom":"1.5rem"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:1rem;margin-bottom:1.5rem;background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:image {"sizeSlug":"large","className":"broadsheet-frame"} -->
+<figure class="wp-block-image size-large broadsheet-frame"><img src="theme:./assets/movie-poster.png" alt="AI_IMAGE: A retro-style movie poster illustration for a fictional indie film, warm sepia and saffron tones, hand-drawn typography, featuring a silhouette of a person standing at a train platform at dusk, vintage Indian cinema aesthetic | illustration | portrait"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.95rem","lineHeight":"1.7"},"spacing":{"margin":{"top":"1rem"}}}} -->
+<p style="margin-top:1rem;font-size:0.95rem;line-height:1.7">Curated notes from the projection room. Independent cinema, world films, and the occasional blockbuster that earns its runtime. Spoiler-free, always.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"860px"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"star-divider","style":{"typography":{"textAlign":"center"}}} -->
+<p class="has-text-align-center star-divider">* * *</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontSize":"1.25rem","fontStyle":"italic","lineHeight":"1.6","textAlign":"center"}}} -->
+<p class="has-text-align-center" style="font-family:'Playfair Display', Georgia, serif;font-size:1.25rem;font-style:italic;line-height:1.6">"The purpose of a writer is to keep civilization from destroying itself."</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","className":"has-warm-gray-color has-text-color","style":{"typography":{"fontSize":"0.8rem","letterSpacing":"2px","textTransform":"uppercase","textAlign":"center"}}} -->
+<p class="has-text-align-center has-warm-gray-color has-text-color" style="font-size:0.8rem;letter-spacing:2px;text-transform:uppercase">-- Albert Camus</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->]]></content>
+  </file>
+  <file path="functions.php">
+    <description>Theme setup, enqueue assets, and register content seeder.</description>
+    <content><![CDATA[<?php
+if ( file_exists( __DIR__ . '/content-loader.php' ) ) { require_once __DIR__ . '/content-loader.php'; }
+if ( file_exists( __DIR__ . '/styles.php' ) ) { require_once __DIR__ . '/styles.php'; }
+if ( file_exists( __DIR__ . '/fonts.php' ) ) { require_once __DIR__ . '/fonts.php'; }
+if ( file_exists( __DIR__ . '/theme-assets-rewrite.php' ) ) { require_once __DIR__ . '/theme-assets-rewrite.php'; }
+
+/**
+ * Theme setup.
+ */
+if ( ! function_exists( 'telex_bombay_pirate_retro_setup' ) ) {
+	function telex_bombay_pirate_retro_setup(): void {
+		add_theme_support( 'wp-block-styles' );
+		add_theme_support( 'editor-styles' );
+		add_theme_support( 'responsive-embeds' );
+		add_theme_support( 'post-thumbnails' );
+	}
+}
+add_action( 'after_setup_theme', 'telex_bombay_pirate_retro_setup' );
+
+/**
+ * Enqueue front-end custom styles.
+ */
+if ( ! function_exists( 'telex_bombay_pirate_retro_enqueue' ) ) {
+	function telex_bombay_pirate_retro_enqueue(): void {
+		wp_enqueue_style(
+			'telex-bombay-pirate-retro-style',
+			get_stylesheet_uri(),
+			array(),
+			wp_get_theme()->get( 'Version' )
+		);
+	}
+}
+add_action( 'enqueue_block_assets', 'telex_bombay_pirate_retro_enqueue' );
+
+/**
+ * Inject the scroll elephant markup into the footer.
+ */
+if ( ! function_exists( 'telex_bombay_pirate_retro_scroll_elephant' ) ) {
+	function telex_bombay_pirate_retro_scroll_elephant(): void {
+		?>
+		<div class="scroll-elephant-container" aria-hidden="true">
+			<div class="scroll-elephant-trail"></div>
+			<div class="scroll-elephant">
+				<svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+					<rect x="20" y="30" width="50" height="30" rx="10" fill="currentColor" />
+					<circle cx="70" cy="35" r="15" fill="currentColor" />
+					<path d="M75,25 Q90,15 95,5 Q100,5 95,15 Q85,35 75,45 Z" fill="currentColor" />
+					<path d="M55,25 C65,20 75,25 75,40 C75,50 65,55 55,45 Z" fill="currentColor" stroke="#F5F0E8" stroke-width="2"/>
+					<rect x="25" y="55" width="10" height="18" rx="3" fill="currentColor" />
+					<rect x="40" y="52" width="10" height="18" rx="3" fill="currentColor" />
+					<rect x="55" y="55" width="10" height="18" rx="3" fill="currentColor" />
+					<path d="M22,35 Q10,40 10,50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+					<circle cx="75" cy="32" r="2" fill="#F5F0E8" />
+				</svg>
+			</div>
+		</div>
+		<?php
+	}
+}
+add_action( 'wp_footer', 'telex_bombay_pirate_retro_scroll_elephant' );
+
+/**
+ * Enqueue the scroll elephant script on the front-end.
+ */
+if ( ! function_exists( 'telex_bombay_pirate_retro_elephant_script' ) ) {
+	function telex_bombay_pirate_retro_elephant_script(): void {
+		wp_enqueue_script(
+			'telex-scroll-elephant',
+			get_stylesheet_directory_uri() . '/scroll-elephant.js',
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+	}
+}
+add_action( 'wp_enqueue_scripts', 'telex_bombay_pirate_retro_elephant_script' );
+
+/**
+ * Content seeder — handled by the Telex content loader.
+ */
+add_action( 'init', 'telex_seed_content', 99 );
+]]></content>
+  </file>
+  <file path="fonts.php">
+    <description>Enqueue Google Fonts (Playfair Display + Space Mono) for front-end and editor.</description>
+    <content><![CDATA[<?php
+/**
+ * Enqueue Google Fonts for both front-end and block editor.
+ */
+if ( ! function_exists( 'telex_bombay_pirate_retro_fonts' ) ) {
+	function telex_bombay_pirate_retro_fonts(): void {
+		wp_enqueue_style(
+			'telex-bombay-pirate-retro-fonts',
+			'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap',
+			array(),
+			null
+		);
+	}
+}
+add_action( 'enqueue_block_assets', 'telex_bombay_pirate_retro_fonts' );
+]]></content>
+  </file>
+  <file path="templates/page.html">
+    <description>Generic page template — shell for static pages.</description>
+    <content><![CDATA[<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:post-title {"level":1,"fontFamily":"'Playfair Display', Georgia, serif","style":{"typography":{"fontWeight":"900"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} /-->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-bottom:var(--wp--preset--spacing--40);background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:post-content {"layout":{"type":"constrained"}} /--></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->]]></content>
+  </file>
+  <file path="templates/single.html">
+    <description>Single post template — editorial post layout.</description>
+    <content><![CDATA[<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"1rem","margin":{"bottom":"1rem"}}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group" style="margin-bottom:1rem"><!-- wp:post-terms {"term":"category","textColor":"sage","className":"category-label","style":{"typography":{"fontSize":"0.75rem","textTransform":"uppercase","letterSpacing":"1.5px","fontWeight":"700"}}} /-->
+
+<!-- wp:paragraph {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.75rem"}}} -->
+<p class="has-warm-gray-color has-text-color" style="font-size:0.75rem">/</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-date {"textColor":"warm-gray","style":{"typography":{"fontSize":"0.75rem","textTransform":"uppercase","letterSpacing":"1px"}},"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:post-title {"level":1,"fontFamily":"'Playfair Display', Georgia, serif","style":{"typography":{"fontWeight":"900","letterSpacing":"-1px"},"spacing":{"margin":{"bottom":"1.5rem"}}}} /-->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-bottom:var(--wp--preset--spacing--40);background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+<!-- wp:separator {"className":"is-style-dots","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+<div class="wp-block-group"><!-- wp:post-terms {"term":"post_tag","textColor":"saffron","style":{"typography":{"fontSize":"0.8rem"}}} /-->
+
+<!-- wp:post-author-name {"textColor":"ink","style":{"typography":{"fontSize":"0.8rem","fontWeight":"700"}}} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->]]></content>
+  </file>
+  <file path="templates/archive.html">
+    <description>Archive template — broadsheet-style post listing.</description>
+    <content><![CDATA[<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group"><!-- wp:query-title {"type":"archive","fontFamily":"'Playfair Display', Georgia, serif","style":{"typography":{"fontWeight":"900"}}} /-->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-bottom:var(--wp--preset--spacing--40);background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:query {"queryId":1,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"className":"post-card","style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group post-card" style="padding-top:1.5rem;padding-right:1.5rem;padding-bottom:1.5rem;padding-left:1.5rem"><!-- wp:post-terms {"term":"category","textColor":"sage","className":"category-label","style":{"typography":{"fontSize":"0.7rem","textTransform":"uppercase","letterSpacing":"1.5px"}}} /-->
+
+<!-- wp:post-title {"level":3,"isLink":true,"fontFamily":"'Playfair Display', Georgia, serif","style":{"typography":{"fontSize":"1.25rem","fontWeight":"900","lineHeight":"1.2"}}} /-->
+
+<!-- wp:post-excerpt {"moreText":"","excerptLength":18,"textColor":"warm-gray","style":{"typography":{"fontSize":"0.85rem","lineHeight":"1.6"}}} /-->
+
+<!-- wp:post-date {"textColor":"saffron","style":{"typography":{"fontSize":"0.7rem","textTransform":"uppercase","letterSpacing":"1px"}},"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}},"typography":{"fontSize":"0.85rem"}}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->]]></content>
+  </file>
+  <file path="content/pages/about.html">
+    <description>About page — the story behind Bombay Pirate.</description>
+    <content><![CDATA[<!-- telex:meta
+title: About
+-->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"className":"letterpress","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900","fontSize":"2.25rem"}}} -->
+<h2 class="wp-block-heading letterpress" style="font-family:'Playfair Display', Georgia, serif;font-size:2.25rem;font-weight:900">The Story</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"top":"1rem","bottom":"2rem"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:1rem;margin-bottom:2rem;background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.1rem","lineHeight":"1.75"}}} -->
+<p style="font-size:1.1rem;line-height:1.75">Bombay Pirate began as a simple notebook — a place to catalog the interesting threads that kept catching my attention: an obscure open-source project here, a dog-eared paperback there, the way evening light hits the old buildings near Marine Drive.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.1rem","lineHeight":"1.75"}}} -->
+<p style="font-size:1.1rem;line-height:1.75">Over time, the notebook grew into this site. It is not a magazine or a news outlet — it is more of a personal archive, a logbook of curiosities maintained by someone who believes that the best things on the internet are still made by hand, with care, and shared freely.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote {"style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontSize":"1.25rem"}}} -->
+<blockquote class="wp-block-quote" style="font-family:'Playfair Display', Georgia, serif;font-size:1.25rem"><!-- wp:paragraph -->
+<p>The name "Bombay Pirate" is a nod to the city's spirit of resourceful invention — and to the idea that good knowledge, like good music, is meant to be shared.</p>
+<!-- /wp:paragraph --></blockquote>
+<!-- /wp:quote --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"ink-border-top","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}},"color":{"background":"#FAF7F2"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull ink-border-top has-background" style="background-color:#FAF7F2;margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"className":"letterpress","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h2 class="wp-block-heading letterpress" style="font-family:'Playfair Display', Georgia, serif;font-weight:900">What You'll Find Here</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"top":"1rem","bottom":"2rem"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:1rem;margin-bottom:2rem;background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"3rem"}}}} -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.25rem;font-weight:900">Opensource &amp; WordPress</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.925rem","lineHeight":"1.7"}}} -->
+<p style="font-size:0.925rem;line-height:1.7">Notes on the projects, communities, and philosophies that power the open web. From core contributions to plugin discoveries to broader reflections on software freedom.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.25rem;font-weight:900">Books &amp; Movies</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.925rem","lineHeight":"1.7"}}} -->
+<p style="font-size:0.925rem;line-height:1.7">Honest, personal notes on what I'm reading and watching. Not reviews — more like letters to a friend about a story that stuck with me on the train ride home.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.25rem;font-weight:900">Photos &amp; Field Notes</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.925rem","lineHeight":"1.7"}}} -->
+<p style="font-size:0.925rem;line-height:1.7">Digital photographs from daily life and occasional travels. Street corners, chai stalls, old bookshops, cloud formations. The kind of quiet beauty that disappears if you blink.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontSize":"1.15rem","fontStyle":"italic","lineHeight":"1.65","textAlign":"center"}}} -->
+<p class="has-text-align-center" style="font-family:'Playfair Display', Georgia, serif;font-size:1.15rem;font-style:italic;line-height:1.65">If something here resonates, or if you want to talk about a book or a piece of software, feel free to get in touch. The best conversations always start with a shared enthusiasm.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->]]></content>
+  </file>
+  <file path="content/pages/contact.html">
+    <description>Contact page with reach-out details and a warm invitation.</description>
+    <content><![CDATA[<!-- telex:meta
+title: Contact
+-->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"className":"letterpress","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900","fontSize":"2.25rem"}}} -->
+<h2 class="wp-block-heading letterpress" style="font-family:'Playfair Display', Georgia, serif;font-size:2.25rem;font-weight:900">Send a Dispatch</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"top":"1rem","bottom":"2rem"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:1rem;margin-bottom:2rem;background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.05rem","lineHeight":"1.75"}}} -->
+<p style="font-size:1.05rem;line-height:1.75">Whether you want to discuss an article, suggest a book, share a project, or simply say hello — I enjoy hearing from fellow wanderers of the open web. No form, no ticket system — just write.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"ink-border-top","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}},"color":{"background":"#FAF7F2"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull ink-border-top has-background" style="background-color:#FAF7F2;margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"4rem"}}}} -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.25rem;font-weight:900">By Email</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.95rem","lineHeight":"1.7"}}} -->
+<p style="font-size:0.95rem;line-height:1.7">The most reliable way to reach me. Plain text preferred — I read every message, though replies may take a day or two during busy weeks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"saffron","style":{"typography":{"fontSize":"0.95rem","fontWeight":"700"}}} -->
+<p class="has-saffron-color has-text-color" style="font-size:0.95rem;font-weight:700">hello@bombaypirate.com</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.25rem","fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900"}}} -->
+<h3 class="wp-block-heading" style="font-family:'Playfair Display', Georgia, serif;font-size:1.25rem;font-weight:900">On the Web</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.95rem","lineHeight":"1.7"}}} -->
+<p style="font-size:0.95rem;line-height:1.7">You can also find me in these corners of the internet, lurking or occasionally contributing:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"style":{"typography":{"fontSize":"0.95rem","lineHeight":"2"}}} -->
+<ul style="font-size:0.95rem;line-height:2" class="wp-block-list"><!-- wp:list-item -->
+<li>GitHub</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Twitter / X</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Mastodon</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>RSS Feed</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"star-divider","style":{"typography":{"textAlign":"center"}}} -->
+<p class="has-text-align-center star-divider">* * *</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"warm-gray","className":"has-warm-gray-color has-text-color","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontSize":"1.15rem","fontStyle":"italic","lineHeight":"1.65","textAlign":"center"}}} -->
+<p class="has-text-align-center has-warm-gray-color has-text-color" style="font-family:'Playfair Display', Georgia, serif;font-size:1.15rem;font-style:italic;line-height:1.65">Response times vary with the seasons — and with whatever book I'm currently lost in.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->]]></content>
+  </file>
+  <file path="content/pages/photos.html">
+    <description>Photos page — gallery of field photography.</description>
+    <content><![CDATA[<!-- telex:meta
+title: Photos
+-->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group"><!-- wp:heading {"className":"letterpress","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900","fontSize":"2.25rem"}}} -->
+<h2 class="wp-block-heading letterpress" style="font-family:'Playfair Display', Georgia, serif;font-size:2.25rem;font-weight:900">From the Field</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"top":"1rem","bottom":"1.5rem"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:1rem;margin-bottom:1.5rem;background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.05rem","lineHeight":"1.75"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->
+<p style="margin-bottom:2.5rem;font-size:1.05rem;line-height:1.75">Photographs taken in the drift between places. No grand expeditions — just the quiet textures of daily life, captured on walks, train rides, and lazy afternoons. All digital, all handheld, all slightly imperfect.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="margin-top:0;padding-top:0;padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group"><!-- wp:gallery {"columns":3,"linkTo":"none","className":"photo-grid","style":{"spacing":{"blockGap":{"left":"1.5rem","top":"1.5rem"}}}} -->
+<figure class="wp-block-gallery has-nested-images columns-3 is-cropped photo-grid"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/photo-street-scene.png" alt="AI_IMAGE: A warm-toned slightly faded photograph of a narrow street in an Indian market town with hanging fabrics and morning light casting diagonal shadows across weathered walls, evoking calm nostalgia | photorealistic | square"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/photo-chai-stall.png" alt="AI_IMAGE: A warm grainy photograph of a roadside chai stall with steel glasses and steam rising, early morning golden light, vintage documentary photography style | photorealistic | square"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/photo-old-books.png" alt="AI_IMAGE: An overhead warm-toned photograph of weathered secondhand books stacked on a wooden table with reading glasses and a brass paperweight, soft diffused light, calm and scholarly atmosphere | photorealistic | square"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/photo-window-light.png" alt="AI_IMAGE: A warm nostalgic photograph of afternoon sunlight streaming through a wooden-framed window onto a desk with an open journal and a pen, dust motes visible in the light, quiet contemplative atmosphere | photorealistic | square"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/photo-train-platform.png" alt="AI_IMAGE: A warm sepia-toned photograph of an Indian railway platform at dusk with a lone traveler and overhead lights creating pools of amber light, documentary photography style with gentle grain | photorealistic | square"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="theme:./assets/photo-rooftop-sky.png" alt="AI_IMAGE: A warm-toned photograph looking up at a dramatic evening sky from between old rooftop water tanks and antennas in an Indian city, golden clouds and deep blue sky, calm and expansive feeling | photorealistic | square"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"ink-border-top","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}},"color":{"background":"#FAF7F2"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull ink-border-top has-background" style="background-color:#FAF7F2;margin-top:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"warm-gray","className":"has-warm-gray-color has-text-color","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontSize":"1.15rem","fontStyle":"italic","lineHeight":"1.65","textAlign":"center"}}} -->
+<p class="has-text-align-center has-warm-gray-color has-text-color" style="font-family:'Playfair Display', Georgia, serif;font-size:1.15rem;font-style:italic;line-height:1.65">All photographs by Aditya Kane. No filters, no presets — just a camera and a good walk.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->]]></content>
+  </file>
+  <file path="templates/404.html">
+    <description>404 Not Found template — editorial style.</description>
+    <content><![CDATA[<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":1,"className":"letterpress","style":{"typography":{"fontFamily":"'Playfair Display', Georgia, serif","fontWeight":"900","fontSize":"clamp(3rem, 8vw, 5rem)","letterSpacing":"-2px","lineHeight":"0.95"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
+<h1 class="wp-block-heading letterpress" style="margin-bottom:1.5rem;font-family:'Playfair Display', Georgia, serif;font-size:clamp(3rem, 8vw, 5rem);font-weight:900;letter-spacing:-2px;line-height:0.95">Page Not Found</h1>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-bottom:1.5rem;background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.05rem","lineHeight":"1.7"}}} -->
+<p style="font-size:1.05rem;line-height:1.7">The page you are looking for has wandered off — perhaps it took a different train, or got lost browsing a bookshop. Try heading back to the homepage and starting fresh.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"2rem"}}}} -->
+<div class="wp-block-buttons" style="margin-top:2rem"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/">Return to the Logbook</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->]]></content>
+  </file>
+  <file path="templates/search.html">
+    <description>Search results template.</description>
+    <content><![CDATA[<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<div class="wp-block-group"><!-- wp:query-title {"type":"search","fontFamily":"'Playfair Display', Georgia, serif","style":{"typography":{"fontWeight":"900"}}} /-->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"color":{"background":"#1C1C1C"},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
+<hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-bottom:var(--wp--preset--spacing--40);background-color:#1C1C1C;color:#1C1C1C"/>
+<!-- /wp:separator -->
+
+<!-- wp:query {"queryId":2,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"relevance","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+<div class="wp-block-query"><!-- wp:post-template -->
+<!-- wp:group {"className":"post-card","style":{"spacing":{"padding":{"top":"1.25rem","bottom":"1.25rem","left":"1.25rem","right":"1.25rem"},"margin":{"bottom":"1rem"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group post-card" style="margin-bottom:1rem;padding-top:1.25rem;padding-right:1.25rem;padding-bottom:1.25rem;padding-left:1.25rem"><!-- wp:post-title {"level":3,"isLink":true,"fontFamily":"'Playfair Display', Georgia, serif","style":{"typography":{"fontSize":"1.35rem","fontWeight":"900"}}} /-->
+
+<!-- wp:post-excerpt {"moreText":"","excerptLength":30,"textColor":"warm-gray","style":{"typography":{"fontSize":"0.9rem","lineHeight":"1.65"}}} /-->
+
+<!-- wp:post-date {"textColor":"saffron","style":{"typography":{"fontSize":"0.75rem","textTransform":"uppercase","letterSpacing":"1px"}},"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"1rem"}}} -->
+<p style="font-size:1rem">No dispatches found matching your search. Try a different query or browse the archives.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->]]></content>
+  </file>
+  <file path="scroll-elephant.js">
+    <content><![CDATA[/**
+ * Scroll Elephant — the little saffron elephant that walks
+ * from left to right as the visitor scrolls down the page.
+ */
+document.addEventListener( 'DOMContentLoaded', function () {
+	var container = document.querySelector( '.scroll-elephant-container' );
+	var elephant = document.querySelector( '.scroll-elephant' );
+	var trail = document.querySelector( '.scroll-elephant-trail' );
+
+	if ( ! container || ! elephant || ! trail ) {
+		return;
+	}
+
+	var elephantWidth = 56;
+	var lastScrollY = -1;
+	var ticking = false;
+	var walkingTimeout = null;
+
+	function getScrollProgress() {
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		var docHeight = Math.max(
+			document.body.scrollHeight,
+			document.documentElement.scrollHeight
+		);
+		var winHeight = window.innerHeight;
+		var scrollable = docHeight - winHeight;
+
+		if ( scrollable <= 0 ) {
+			return 0;
+		}
+
+		return Math.min( Math.max( scrollTop / scrollable, 0 ), 1 );
+	}
+
+	function update() {
+		ticking = false;
+
+		var progress = getScrollProgress();
+		var viewportWidth = window.innerWidth;
+		var maxTravel = viewportWidth + elephantWidth;
+		var xPos = -elephantWidth + ( progress * maxTravel );
+
+		elephant.style.left = xPos + 'px';
+
+		var trailWidth = Math.max( 0, xPos );
+		trail.style.width = trailWidth + 'px';
+	}
+
+	function onScroll() {
+		var currentY = window.pageYOffset || document.documentElement.scrollTop;
+
+		// Add walking class for the bob animation
+		elephant.classList.add( 'scroll-elephant--walking' );
+
+		// Clear previous timeout and set a new one to stop bobbing
+		if ( walkingTimeout ) {
+			clearTimeout( walkingTimeout );
+		}
+		walkingTimeout = setTimeout( function () {
+			elephant.classList.remove( 'scroll-elephant--walking' );
+		}, 200 );
+
+		if ( currentY !== lastScrollY ) {
+			lastScrollY = currentY;
+
+			if ( ! ticking ) {
+				ticking = true;
+				requestAnimationFrame( update );
+			}
+		}
+	}
+
+	// Set the saffron color
+	elephant.style.color = getComputedStyle( document.documentElement )
+		.getPropertyValue( '--wp--preset--color--saffron' )
+		.trim() || '#C0622F';
+
+	// Initial position
+	update();
+
+	window.addEventListener( 'scroll', onScroll, { passive: true } );
+	window.addEventListener( 'resize', function () {
+		if ( ! ticking ) {
+			ticking = true;
+			requestAnimationFrame( update );
+		}
+	}, { passive: true } );
+} );]]></content>
+  </file>
+  <file path="theme-assets-rewrite.php">
+    <content><![CDATA[<?php
+
+/**
+ * Rewrites theme:./ URLs in block content.
+ * It allows theme asset relative paths in templates e.g. theme:./assets/image.png
+**/
+
+// Rewrites theme:./ URLs of block content in the frontend.
+add_filter( 'render_block', function ( $content ) {
+	if ( ! $content ) {
+		return $content;
+	}
+	$base = get_stylesheet_directory_uri();
+	$content = preg_replace( '/(src|href)=(["\']?)theme:\.\//', '$1=$2' . $base . '/', $content );
+	$content = preg_replace( '/url\((["\']?)theme:\.\//', 'url($1' . $base . '/', $content );
+	return $content;
+} );
+
+// Enqueues script for theme:./ URL rewriting in the editor.
+add_action( 'enqueue_block_editor_assets', function () {
+	wp_enqueue_script( 'theme-assets-editor-rewrite', get_stylesheet_directory_uri() . '/theme-assets-editor-rewrite.js', [ 'wp-hooks', 'wp-compose', 'wp-element' ], '1.0.0', true );
+	wp_add_inline_script( 'theme-assets-editor-rewrite', 'window.THEME_ASSETS_BASE_URL=' . wp_json_encode( get_stylesheet_directory_uri() ) . ';', 'before' );
+} );
+]]></content>
+  </file>
+  <file path="theme-assets-editor-rewrite.js">
+    <content><![CDATA[/**
+ * Theme Assets Editor Rewrite
+ *
+ * This script rewrites URLs in block attributes that start with 'theme:./'
+ * to point to the correct theme assets.
+ * It allows blocks in templates to reference theme assets using relative paths in the editor.
+**/
+(function (wp) {
+	const base = window.THEME_ASSETS_BASE_URL || '';
+	const prefix = 'theme:./';
+
+	if (!wp?.hooks || !wp?.compose) return;
+
+	const rewrite = (url) => {
+		if (typeof url === 'string' && url.startsWith(prefix)) {
+			const path = url.slice(prefix.length);
+			return base + '/' + path;
+		}
+		return null;
+	};
+
+	// Recursively walk any value and rewrite all theme:./ URLs found in it.
+	// Returns a new structure if anything changed, or null if nothing changed.
+	const deepRewrite = (value) => {
+		if (typeof value === 'string') {
+			return rewrite(value);
+		}
+		if (Array.isArray(value)) {
+			let changed = false;
+			const result = value.map((item) => {
+				const rewritten = deepRewrite(item);
+				if (rewritten !== null) {
+					changed = true;
+					return rewritten;
+				}
+				return item;
+			});
+			return changed ? result : null;
+		}
+		if (value && typeof value === 'object') {
+			let changed = false;
+			const result = {};
+			for (const key of Object.keys(value)) {
+				const rewritten = deepRewrite(value[key]);
+				if (rewritten !== null) {
+					changed = true;
+					result[key] = rewritten;
+				} else {
+					result[key] = value[key];
+				}
+			}
+			return changed ? result : null;
+		}
+		return null;
+	};
+
+	wp.hooks.addFilter(
+		'editor.BlockEdit',
+		'theme-assets/rewrite-image-urls',
+		wp.compose.createHigherOrderComponent((BlockEdit) => (props) => {
+			const { attributes } = props;
+
+			// Deep-rewrite all attributes to resolve any theme:./ URLs
+			const rewrittenAttributes = deepRewrite(attributes);
+
+			// Pass rewritten URLs to BlockEdit for display only, without persisting changes
+			if (rewrittenAttributes) {
+				const modifiedProps = {
+					...props,
+					attributes: rewrittenAttributes,
+				};
+				return wp.element.createElement(BlockEdit, modifiedProps);
+			}
+
+			return wp.element.createElement(BlockEdit, props);
+		}, 'withThemeAssetsRewrite')
+	);
+
+})(window.wp);]]></content>
+  </file>
+  <file path="styles.php">
+    <content><![CDATA[<?php
+
+/**
+ * Theme styles and editor styles setup.
+ * It enqueues the main stylesheet in the front-end and in the editor.
+**/
+
+add_action( 'after_setup_theme', function () {
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'style.css' );
+} );
+
+add_action( 'wp_enqueue_scripts', function () {
+	wp_enqueue_style( 'telex-theme-style', get_stylesheet_uri(), [], wp_get_theme()->get( 'Version' ) );
+} );]]></content>
+  </file>
+  <file path="content-loader.php">
+    <content><![CDATA[<?php
+
+/**
+ * Seeds a theme's sample pages and CPT entries from content/ HTML files.
+ *
+ * Content files live in the theme under content/pages/<slug>.html and
+ * content/cpt/<cpt-slug>/<item-slug>.html. Each begins with a single
+ * <!-- telex:meta --> HTML comment carrying metadata (title at minimum),
+ * followed by block markup that becomes the post_content.
+ *
+ * This file is injected into every generated theme by
+ * AddArbitraryFilesToArtefactTask; do not edit it inside a generated theme.
+**/
+
+/**
+ * Parse a content file into its meta header and body.
+ *
+ * `has_header` is true when the file begins with a well-formed
+ * `<!-- telex:meta ... -->` comment, regardless of whether that header
+ * carries any parseable keys. This lets the loader distinguish a file
+ * with no header (skip) from a file with a header missing `title:`
+ * (fall back to the titleized slug).
+ *
+ * @param string $content Raw file content.
+ * @return array{has_header: bool, meta: array<string,string>, body: string}
+ */
+function telex_parse_content_file(string $content): array
+{
+    $trimmed = ltrim($content);
+    $prefix = '<!-- telex:meta';
+
+    if (strncmp($trimmed, $prefix, strlen($prefix)) !== 0) {
+        return ['has_header' => false, 'meta' => [], 'body' => $content];
+    }
+
+    $closePos = strpos($trimmed, '-->');
+    if ($closePos === false) {
+        return ['has_header' => false, 'meta' => [], 'body' => $content];
+    }
+
+    $headerInner = substr($trimmed, strlen($prefix), $closePos - strlen($prefix));
+    $body = substr($trimmed, $closePos + 3);
+
+    $meta = [];
+    foreach (explode("\n", $headerInner) as $line) {
+        $line = trim($line);
+        if ($line === '') {
+            continue;
+        }
+        $colonPos = strpos($line, ':');
+        if ($colonPos === false) {
+            continue;
+        }
+        $key = trim(substr($line, 0, $colonPos));
+        $value = trim(substr($line, $colonPos + 1));
+        if ($key === '') {
+            continue;
+        }
+        $meta[$key] = $value;
+    }
+
+    return ['has_header' => true, 'meta' => $meta, 'body' => $body];
+}
+
+/**
+ * Given a relative content-file path and its parsed meta, derive post fields.
+ *
+ * @param string $relativePath Path relative to the theme root (e.g. content/pages/home.html).
+ * @param array<string,string> $meta Parsed meta from telex_parse_content_file().
+ * @return array{post_type: string, post_name: string, post_title: string, is_home: bool}|null
+ */
+function telex_derive_post_info(string $relativePath, array $meta): ?array
+{
+    if (!str_ends_with($relativePath, '.html')) {
+        return null;
+    }
+
+    $post_type = null;
+    $post_name = null;
+
+    if (preg_match('#^content/pages/([^/]+)\.html$#', $relativePath, $m)) {
+        $post_type = 'page';
+        $post_name = $m[1];
+    } elseif (preg_match('#^content/cpt/([^/]+)/([^/]+)\.html$#', $relativePath, $m)) {
+        $post_type = $m[1];
+        $post_name = $m[2];
+    } else {
+        return null;
+    }
+
+    $title = isset($meta['title']) && $meta['title'] !== ''
+        ? $meta['title']
+        : ucwords(str_replace('-', ' ', $post_name));
+
+    return [
+        'post_type'  => $post_type,
+        'post_name'  => $post_name,
+        'post_title' => $title,
+        'is_home'    => ($post_type === 'page' && $post_name === 'home'),
+    ];
+}
+
+/**
+ * Scan content/ in the active theme and insert one post per content file.
+ *
+ * Idempotent via the telex_seeded_v1 option flag (runs once per theme
+ * activation) and a per-slug get_page_by_path() check (never overwrites
+ * existing posts). Hooked to init priority 99 so CPTs (registered at
+ * default init priority 10) are available when inserts happen.
+ */
+function telex_seed_content(): void
+{
+    if (get_option('telex_seeded_v1')) {
+        return;
+    }
+
+    $theme_dir = get_template_directory();
+    $paths = array_merge(
+        glob($theme_dir . '/content/pages/*.html') ?: [],
+        glob($theme_dir . '/content/cpt/*/*.html') ?: []
+    );
+
+    // Allow the `theme:` pseudo-protocol through wp_kses_post during seeding so
+    // theme-relative asset URLs (e.g. theme:./assets/hero.png) survive the
+    // content_save_pre sanitization that runs inside wp_insert_post. Without
+    // this the prefix is stripped and block validation fails in the editor.
+    $allow_theme_protocol = static function (array $protocols): array {
+        $protocols[] = 'theme';
+        return $protocols;
+    };
+    add_filter('kses_allowed_protocols', $allow_theme_protocol);
+
+    $home_id = null;
+
+    foreach ($paths as $absolute_path) {
+        $relative = ltrim(str_replace($theme_dir, '', $absolute_path), '/');
+        $raw = @file_get_contents($absolute_path);
+        if ($raw === false) {
+            error_log("telex_seed_content: could not read {$relative}");
+            continue;
+        }
+
+        $parsed = telex_parse_content_file($raw);
+        if (!$parsed['has_header']) {
+            error_log("telex_seed_content: missing telex:meta header in {$relative}, skipping");
+            continue;
+        }
+
+        $info = telex_derive_post_info($relative, $parsed['meta']);
+        if ($info === null) {
+            error_log("telex_seed_content: unexpected path shape {$relative}, skipping");
+            continue;
+        }
+
+        $existing = get_page_by_path($info['post_name'], OBJECT, $info['post_type']);
+        if ($existing) {
+            if ($info['is_home'] && $home_id === null) {
+                $home_id = (int) $existing->ID;
+            }
+            continue;
+        }
+
+        // menu_order: 0 for Home so it sorts first, 10+ for everything else.
+        // This drives the default wp_list_pages() ordering used by the
+        // Navigation block fallback when no explicit menu is set.
+        $menu_order = ($info['post_type'] === 'page')
+            ? ($info['is_home'] ? 0 : 10)
+            : 0;
+
+        $inserted = wp_insert_post([
+            'post_type'    => $info['post_type'],
+            'post_name'    => $info['post_name'],
+            'post_title'   => $info['post_title'],
+            'post_content' => $parsed['body'],
+            'post_status'  => 'publish',
+            'menu_order'   => $menu_order,
+        ], true);
+
+        if (is_wp_error($inserted) || !$inserted) {
+            $msg = is_wp_error($inserted) ? $inserted->get_error_message() : 'unknown error';
+            error_log("telex_seed_content: wp_insert_post failed for {$relative}: {$msg}");
+            continue;
+        }
+
+        if ($info['is_home']) {
+            $home_id = (int) $inserted;
+        }
+    }
+
+    remove_filter('kses_allowed_protocols', $allow_theme_protocol);
+
+    // Remove the WordPress default "Sample Page" so it does not appear in the
+    // theme's navigation. Force-delete to bypass trash.
+    $sample_page = get_page_by_path('sample-page', OBJECT, 'page');
+    if ($sample_page) {
+        wp_delete_post((int) $sample_page->ID, true);
+    }
+
+    if ($home_id) {
+        update_option('show_on_front', 'page');
+        update_option('page_on_front', $home_id);
+    }
+
+    update_option('telex_seeded_v1', 1);
+}
+
+if (function_exists('add_action')) {
+    add_action('init', 'telex_seed_content', 99);
+}
+]]></content>
+  </file>
+</artefact>
